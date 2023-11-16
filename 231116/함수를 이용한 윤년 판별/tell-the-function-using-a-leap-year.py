@@ -13,4 +13,4 @@ def leap_year(n):
 if leap_year(n):
     print("true")
 else:
-    print("fasle")
+    print("false")
