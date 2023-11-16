@@ -13,4 +13,7 @@ def operator(val1,opt,val2):
     
     return False
 
-print(f'{val1} {opt} {val2} = {operator(val1,opt,val2)}')
+if operator(val1,opt,val2) != False:
+    print(f'{val1} {opt} {val2} = {operator(val1,opt,val2)}')
+else:
+    print('False')
