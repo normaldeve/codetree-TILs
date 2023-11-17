@@ -1,7 +1,7 @@
 arr = input()
 
 def palindrome(arr):
-    for i in range(len(arr)//2):
+    for i in range(len(arr)):
         if arr[i] == arr[len(arr)-1-i]:
             return True
         
