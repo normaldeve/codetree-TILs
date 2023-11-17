@@ -2,7 +2,7 @@ arr = input()
 
 def palindrome(arr):
     for i in range(len(arr)//2):
-        if arr[i] == arr[-1-i]:
+        if arr[i] == arr[len(arr)-1-i]:
             return True
         
     else:
