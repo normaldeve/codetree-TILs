@@ -2,8 +2,6 @@ MAX_K = 10000
 
 n = int(input())
 a = [0] *(2*MAX_K + 1)
-count_black = [0] *(2*MAX_K + 1)
-count_white = [0] *(2*MAX_K + 1)
 black, white = 0,0
 
 current = 0
@@ -14,7 +12,6 @@ for _ in range(n):
     if direction == 'L':
         while distance > 0:
             a[current] = 1
-            count_white[current] += 1
             distance -= 1
 
             if distance > 0:
@@ -23,7 +20,6 @@ for _ in range(n):
     else:
         while distance > 0:
             a[current] = 2
-            count_black[current] += 1
             distance -= 1
 
             if distance > 0:
