@@ -6,7 +6,7 @@ for i in range(n):
     if arr[i] < t:
         ans = 0
     else:
-        if i >= 1 and a[i] == a[i-1] + 1:
+        if i >= 1 and arr[i] == arr[i-1] + 1:
             cnt += 1
         else:
             cnt = 1
