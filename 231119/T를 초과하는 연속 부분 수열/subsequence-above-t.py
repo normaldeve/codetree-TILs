@@ -3,10 +3,13 @@ arr = list(map(int,input().split()))
 
 ans, cnt = 0,0
 for i in range(n):
-    if i >= 1 and arr[i] > t and arr[i-1] > t and arr[i] == arr[i-1] + 1:
-        cnt += 1
+    if arr[i] < t:
+        ans = 0
     else:
-        cnt = 1
+        if i >= 1 and a[i] == a[i-1] + 1:
+            cnt += 1
+        else:
+            cnt = 1
     
     ans = max(ans,cnt)
 
