@@ -6,8 +6,11 @@ for i in range(n):
     if i >= 1 and arr[i] > t and arr[i-1] > t and arr[i] == arr[i-1] + 1:
         cnt += 1
     else:
-        cnt == 1
+        cnt = 1
     
     ans = max(ans,cnt)
 
-print(ans)
+if ans >= 2:
+    print(ans)
+else:
+    print(0)
