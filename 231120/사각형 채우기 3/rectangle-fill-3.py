@@ -2,7 +2,7 @@ MAX_N = 1000
 MOD = 1000000007
 
 n = int(input())
-dp = [0] * (MAX_N + 1)
+dp = [0] * (n + 1)
 
 dp[0] = 1
 dp[1] = 2
