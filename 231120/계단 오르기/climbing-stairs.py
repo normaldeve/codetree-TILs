@@ -1,11 +1,15 @@
+MAX_N = 1000
+MOD = 10007
+
 n = int(input())
+dp = [0] *(MAX_N + 1)
 
-def f(n):
-    if n == 1 or n == 2 or n == 3:
-        return 1
-    if n == 0:
-        return 0
-    else:
-        return f(n-2) + f(n-3)
+dp[0] = 1
+dp[1] = 0
+dp[2] = 1
+dp[3] = 1
 
-print(f(n) % 10007)
+for i in range(4,n+1):
+    dp[i] = (dp[i-2] + dp[i-3]) % MOD
+
+print(dp[n])
