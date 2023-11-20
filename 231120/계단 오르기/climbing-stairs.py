@@ -8,4 +8,4 @@ def f(n):
     else:
         return f(n-2) + f(n-3)
 
-print(f(n))
+print(f(n) % 10007)
