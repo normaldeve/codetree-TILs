@@ -1,5 +1,5 @@
 arr = list(map(int,input().split()))
-min_ = 0
+min_ = 101
 
 for i in arr:
     if i <= min_:
