@@ -9,6 +9,6 @@ public class Main {
         int b = sc.nextInt();
         int c = sc.nextInt();
 
-        System.out.println(a + "-" + c + "-" + b);
+        System.out.println("010" + "-" + c + "-" + b);
     }
 }
