@@ -5,10 +5,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int area = n * n;
+        System.out.println(area);
         if (n < 5) {
             System.out.println("tiny");
-        } else {
-            System.out.println(area);
         }
     }
 }
