@@ -13,7 +13,7 @@ public class Main {
 
         for (int i = n - 1; i >= 0; i--) {
             if (arr[i] % 2 == 0) {
-                System.out.println(arr[i]);
+                System.out.println(arr[i] + " ");
             }
         }
 
