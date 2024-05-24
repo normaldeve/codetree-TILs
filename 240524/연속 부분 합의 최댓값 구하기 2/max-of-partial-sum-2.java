@@ -7,7 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();    
-        int[] arr = new int[n];
+        int[] arr = new int[100000];
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
@@ -19,7 +19,7 @@ public class Main {
             } else {
                 answer += arr[i];
             }
-            answer = Math.max(-1000, answer);
+            answer = Math.max(-100000, answer);
         }
         System.out.print(answer);
     }
