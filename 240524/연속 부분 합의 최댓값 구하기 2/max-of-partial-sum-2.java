@@ -19,7 +19,7 @@ public class Main {
             } else {
                 answer += arr[i];
             }
-            answer = Math.max(answer, -1000);
+            answer = Math.max(-1000, answer);
         }
         System.out.print(answer);
     }
