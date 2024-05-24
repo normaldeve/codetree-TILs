@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
 public class Main {
-    public static int n;
-    public static int[] arr = new int[n];
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -12,7 +10,7 @@ public class Main {
             arr[i] = sc.nextInt();
         }
 
-        int result = 0;
+        int result = Integer.MIN_VALUE;
         int answer = 0;
         for (int i = 0; i < n; i++) {
             if (answer < 0) {
@@ -20,7 +18,7 @@ public class Main {
             } else {
                 answer += arr[i];
             }
-            result = Math.max(-100000, answer);
+            result = Math.max(result, answer);
         }
         System.out.print(result);
     }
