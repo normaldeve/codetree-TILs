@@ -11,6 +11,8 @@ public class Main {
         for (int i = 1; i < n; i++) {
             if (seq[i - 1] == seq[i]) {
                 seqCount++;
+            } else {
+                seqCount = 1;
             }
             maxCount = Math.max(maxCount, seqCount);
         }
