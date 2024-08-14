@@ -11,16 +11,14 @@ public class Main {
         char[] charB = b.toCharArray();
 
         Arrays.sort(charA);
+        String strA = new String(charA);
         Arrays.sort(charB);
-        String answer = "";
+        String strB = new String(charB);
 
-        for (int i = 0; i < a.length(); i++) {
-            if (charA[i] != charB[i]) {
-                answer = "No";
-            } else {
-                answer = "Yes";
-            }
+        if (strA.equals(strB)) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
         }
-        System.out.println(answer);
     }
 }
