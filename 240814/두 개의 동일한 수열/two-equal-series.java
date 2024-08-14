@@ -26,8 +26,8 @@ public class Main {
             b[i] = scanner.nextInt();
         }
 
-        Arrays.sort(a);
-        Arrays.sort(b);
+        Arrays.sort(a, 0 ,n);
+        Arrays.sort(b, 0, n);
 
         if (equal()) {
             System.out.println("Yes");
