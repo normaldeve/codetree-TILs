@@ -21,7 +21,7 @@ public class Main {
         int time = sc.nextInt();
 
         Secret secret = new Secret(scret_code, meeting_point, time);
-        System.out.println("secret code = " + secret.scret_code);
+        System.out.println("secret code : " + secret.scret_code);
         System.out.println("meeting point : " + secret.meeting_point);
         System.out.println("time : " + secret.time);
     }
