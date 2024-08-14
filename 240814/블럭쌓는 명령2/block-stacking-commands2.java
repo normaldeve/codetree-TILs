@@ -24,7 +24,7 @@ public class Main {
 
         for (int i = 1; i <= k; i++) {
             for (int j = a[i]; j <= b[i] ; j++) {
-                blocks[i]++;
+                blocks[j]++;
             }
         }
 
