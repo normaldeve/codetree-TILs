@@ -1,38 +1,38 @@
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int[] arrA = new int[n];
-        int[] arrB = new int[n];
-
+    public static final int MAX_N = 100;
+    public static int n;
+    public static int[] a = new int[MAX_N];
+    public static int[] b = new int[MAX_N];
+    
+    public static boolean equal() {
         for (int i = 0; i < n; i++) {
-            arrA[i] = scanner.nextInt();
-        }
-
-        for (int i = 0; i < n; i++) {
-            arrB[i] = scanner.nextInt();
-        }
-
-        Arrays.sort(arrA);
-        Arrays.sort(arrB);
-
-        int[] result = new int[n];
-        for (int i = 0; i < n; i++) {
-            result[i] = arrA[i] - arrB[i];
-        }
-
-        String answer = "";
-        for (int i = 0; i < n; i++) {
-            if (result[i] == 0) {
-                answer = "Yes";
-            } else {
-                answer = "No";
+            if (a[i] != b[i]) {
+                return false;
             }
         }
-        System.out.println(answer);
+        return true;
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        n = scanner.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            a[i] = scanner.nextInt();
+        }
+        for (int i = 0; i < n; i++) {
+            b[i] = scanner.nextInt();
+        }
+
+        Arrays.sort(a);
+        Arrays.sort(b);
+
+        if (equal()) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        } 
     }
 }
