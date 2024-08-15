@@ -14,9 +14,12 @@ public class Main {
             char cDir = str.charAt(i);
             if (cDir == 'L') currDir = (currDir - 1 + 4) % 4;
             else if (cDir == 'R') currDir = (currDir + 1) % 4;
-            else x = x + dx[currDir];
-            y = y + dy[currDir];
+            else { 
+                x = x + dx[currDir];
+                y = y + dy[currDir];
+            }
         }
+            
         System.out.println(x + " " + y);
     }
 }
