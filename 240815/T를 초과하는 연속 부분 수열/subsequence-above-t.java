@@ -18,7 +18,7 @@ public class Main {
         int ans = 0, cnt = 0;
         for(int i = 0; i < n; i++) {
             // Case 1
-            if(i >= 1 && arr[i] * arr[i - 1] > 0)
+            if(i >= 1 && arr[i] > 0 && arr[i - 1] > 0)
                 cnt++;
                 // Case 2
             else
