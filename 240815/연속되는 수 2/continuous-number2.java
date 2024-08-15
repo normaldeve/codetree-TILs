@@ -15,22 +15,19 @@ public class Main {
             arr[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < n; i++) {
-            check[arr[i]] = 1;
+        int ans = 0, cnt = 0;
+        for(int i = 0; i < n; i++) {
+            // Case 1
+            if(i >= 1 && arr[i] == arr[i - 1])
+                cnt++;
+                // Case 2
+            else
+                cnt = 1;
+
+            ans = Math.max(ans, cnt);
         }
 
-        for (int i = 0; i < n; i++) {
-            if (i >= 1 && arr[i] == arr[i - 1]) {
-                check[arr[i]]++;
-            }
-        }
-
-        int maxCount = 0;
-        for (int i : check) {
-            if (i > maxCount) {
-                maxCount = i;
-            }
-        }
-        System.out.println(maxCount);
+        // 출력
+        System.out.print(ans);
     }
 }
