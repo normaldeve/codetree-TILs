@@ -20,7 +20,7 @@ public class Main {
             for (int i = 0; i < k - 1; i++) {
                 stack.add(stack.poll());
             }
-            System.out.print(stack.poll());
+            System.out.print(stack.poll() + " ");
         }
 
 
