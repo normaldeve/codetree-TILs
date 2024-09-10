@@ -10,6 +10,8 @@ public class Main {
 
         if (str1.length() > str2.length()) {
             System.out.println(str1 + " " + str1.length());
+        } else if (str2.length() == str1.length()) {
+            System.out.println("same");
         } else {
             System.out.println(str2 + " " + str2.length());
         }
