@@ -7,10 +7,10 @@ public class Main {
         boolean existsEE = false;
         boolean existsAB = false;
         for (int i = 0; i < input.length() - 1; i++) {
-            if ((i + 2) <= input.length() - 1 || input.substring(i, i + 2).equals("ee")) {
+            if ((i + 2) < input.length() - 1 && input.substring(i, i + 2).equals("ee")) {
                 existsEE = true;
             }
-            if (input.substring(i, i + 2).equals("ab")) {
+            if ((i + 2) < input.length() - 1 && input.substring(i, i + 2).equals("ab")) {
                 existsAB = true;
             }
         }
@@ -19,7 +19,7 @@ public class Main {
         } else {
             System.out.print("No ");
         }
-        
+
 
         if (existsAB) {
             System.out.print("Yes");
