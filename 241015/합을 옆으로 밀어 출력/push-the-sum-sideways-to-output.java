@@ -13,7 +13,8 @@ public class Main {
         String result = "";
 
         for(int i = 1; i <= str.length(); i++) {
-            result += str.charAt(i % 4);
+            int size = str.length();
+            result += str.charAt(i % size);
         }
         System.out.print(result);
     }
