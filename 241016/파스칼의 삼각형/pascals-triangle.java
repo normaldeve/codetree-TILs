@@ -11,7 +11,7 @@ public class Main {
                 if (j == 0 || j == i) {
                     arr[i][j] = 1;
                 } else {
-                    arr[i][j] = arr[i - 1][j] + arr[i][j - 1];
+                    arr[i][j] = arr[i - 1][j] + arr[i - 1][j - 1];
                 }
             }
         }
