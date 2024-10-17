@@ -10,7 +10,7 @@ public class Main {
         int x4 = sc.nextInt();
         boolean isIntersect = false;
 
-        int[] graph = new int[100];
+        int[] graph = new int[101];
         for(int i = x1; i <= x2; i++) {
             graph[i] = 1;
         }
