@@ -14,7 +14,10 @@ class Student implements Comparable<Student> {
 
     @Override
     public int compareTo(Student student) {
-        if (this.kor == student.kor) {
+        if (student.kor == this.kor) {
+            if (student.eng == this.eng) {
+                return student.math - this.math;
+            }
             return student.eng - this.eng;
         }
         return student.kor - this.kor;
