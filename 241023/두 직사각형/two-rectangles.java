@@ -15,11 +15,7 @@ public class Main {
         int b2 = sc.nextInt();
         boolean isOverlap = true;
 
-        if (x2 < a1 || a2 < x1) {
-            isOverlap = false;
-        }
-
-        if (y2 < b1 || b2 < y1) {
+        if (x2 < a1 || a2 < x1 || y2 < b1 || b2 < y1) {
             isOverlap = false;
         }
 
