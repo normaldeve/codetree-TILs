@@ -9,20 +9,22 @@ public class Main {
         int c = sc.nextInt();
         int d = sc.nextInt();
 
-        int start = 0;
-        int end = 0;
-        if (a < c) {
-            start = a;
-        } else {
-            start = c;
+        int[] arr = new int[100];
+        for(int i = a; i < b; i++) {
+            arr[i] = 1;
         }
 
-        if (b < d) {
-            end = d;
-        } else {
-            end = b;
+        for(int i = c; i< d; i++) {
+            arr[i] = 1;
         }
 
-        System.out.println(end - start);
+        int answer = 0;
+        for(int num : arr) {
+            if (num == 1) {
+                answer++;
+            }
+        }
+
+        System.out.println(answer);
     }
 }
