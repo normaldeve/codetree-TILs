@@ -17,6 +17,8 @@ public class Main {
                 isOverlap = false;
                 break;
             }
+            arr[0] = a;
+            arr[1] = b;
         }
         if (isOverlap) {
             System.out.print("Yes");
