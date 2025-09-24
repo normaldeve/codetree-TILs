@@ -9,16 +9,16 @@ public class Main {
         int M = sc.nextInt();
         for (int i = 0; i < N; i++) {
             int num = sc.nextInt();
-            pq.add(num);
+            pq.add(-num);
         }
 
         while(M-- > 0) {
-            int x = pq.poll();
+            int x = -pq.poll();
             x -= 1;
-            pq.add(x);
+            pq.add(-x);
         }
 
-        System.out.print(pq.peek());
+        System.out.print(-pq.peek());
 
 
 
