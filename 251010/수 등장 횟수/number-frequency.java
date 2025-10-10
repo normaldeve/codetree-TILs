@@ -9,7 +9,11 @@ public class Main {
 
         for(int i = 0; i < N; i++) {
             int num = sc.nextInt();
-            map.put(num, i + 1);
+            if (map.containsKey(num)) {
+                map.put(num, map.get(num) + 1);
+            } else {
+                map.put(num, 1);
+            }
         }
 
         for(int i = 0; i < M; i++) {
