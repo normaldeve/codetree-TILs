@@ -7,6 +7,7 @@ public class Main {
         int t = sc.nextInt();
         for (int tc = 0; tc < t; tc++) {
             int n = sc.nextInt();
+            treeSet.clear();
             for (int i = 0; i < n; i++) {
                 char command = sc.next().charAt(0);
                 int num = sc.nextInt();
