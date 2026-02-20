@@ -6,15 +6,12 @@ public class Main {
         int B = sc.nextInt();
         int C = sc.nextInt();
         // Please write your code here.
-        if (A < 11 || B < 11 || C < 11) {
+        int total_minute = A * 24 * 60 + B * 60 + C;
+        int after = 11 * 24 * 60 + 11 * 60 + 11;
+        if (total_minute < after) {
             System.out.print(-1);
-            return;
+        } else {
+            System.out.print(total_minute - after);
         }
-
-        int day_diff = A - 11;
-        int hour_diff = B - 11;
-        int minute_diff = C - 11;
-
-        System.out.print(day_diff * 24 * 60 + hour_diff * 60 + minute_diff);
     }
 }
